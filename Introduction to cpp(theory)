@@ -1,0 +1,26 @@
+**Chapter 1: Introduction to C++** 
+
+C++ is a general-purpose programming language that was developed by Bjarne Stroustrup as an enhancement of the C language to add object-oriented paradigm. It is a high-level programming language that was first released in 1985 and since then has become the foundation of many modern technologies like game engines, web browsers, operating systems, financial systems, etc.
+
+Features of C++
+The main features C++ programming language are as follows:
+
+Simple: It is a simple language in the sense that programs can be broken down into logical units and parts, and has a rich library support and a variety of datatypes.
+Machine Independent: C++ code can be run on any machine as long as a suitable compiler is provided.
+Low-level Access: C++ provides low-level access to system resources, which makes it a suitable choice for system programming and writing efficient code.
+Fast Execution Speed: C++ is one of the fastest high-level languages. There is no additional processing overhead in C++, it is blazing fast.
+Object-Oriented: One of the strongest points of the language which sets it apart from C. Object-Oriented support helps C++ to make maintainable and extensible programs. i.e. large-scale applications can be built.
+Applications of C++
+C++ is used in a wide range of applications from game engines and application software to operating systems and embedded systems.
+
+use-of-cpp-in-operating-systems.webpuse-of-cpp-in-operating-systems.webp
+Why Learn C++?
+C++ is often taught as a foundational language to aspiring programmers, but it is much more than that:
+
+C++ remains one of the most used and popular programming languages used in making operating systems, embedded systems, graphical user interfaces and nowadays in high frequency trading (HFT) software.
+It supports both low-level and high-level features such as manual memory management and OOPs programming respectively.
+Syntax similarity with C, Java, and C# makes it easier to switch languages.
+C++ provides one of the fastest execution speeds among high level languages, which can be a deciding factor in Competitive Programming or high-performance applications.
+
+
+
