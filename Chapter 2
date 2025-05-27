@@ -1,0 +1,182 @@
+The compiler
+• The compiler
+• reads source code in a character by character fashion
+• reports errors whenever possible
+• reports warnings to help avoid errors
+• conceptually replaces #includes with the source code
+of the #included file
+
+#include directives
+• General form: #include-directive
+#include <include-file>
+-or-
+#include "include-file"
+• < > causes a search of the system folder(s)
+• these files should be found automatically.
+• The form with " " first searches the working folder
+before searching the system folder(s)
+• the " " indicates a new file from your working folder.
+
+  Pieces of a C++ Program
+• A token is the smallest recognizable unit in a
+programming language.
+• C++ has four types of tokens:
+• special symbols
+• keywords
+• identifiers
+• constants
+
+Tokens
+• Each color represents a different type of token
+special symbol identifier reserved-identifier
+literal comment
+// Comment: This is a complete C++ program
+#include <iostream>
+using namespace std;
+int main() {
+cout << "Hello World!";
+return 0;
+}
+
+Special Symbols
+• One or two character sequences (no spaces).
+// < > ( ) { << ; } !=
+• Some special symbols mean different things in
+different contexts.
+
+Identifiers
+• There are some standard (always available with the
+C++ compiler) identifiers:
+endl sqrt string width std
+• The programmer can make up new identifiers
+test1 x1 aNumber MAXIMUM A_1
+ Identifiers have from 1 to 32 characters:
+'a'..'z' 'A'..'Z' '0'..'9' '_'
+• Identifiers should start with a letter: a1 is legal, 1a is not
+(can also start with underscore _
+• C++ is case sensitive. A and a are different.
+• Which of these are valid identifiers?
+a) abc e) ABC i) a_1
+b) m/h f) 25or6to4 j) student Number
+c) main g) 1_time k) string
+d) double h) first name l) ______
+
+Reserved Identifiers
+• Word like tokens with a pre-defined meaning that can't
+be changed (reserved-identifiers)
+double int
+• Some of the keywords in the text :
+bool class for operator typedef
+case do if return void
+char else long switch while
+
+Literals
+• floating-point literals
+1.234 -12.5 0.0 0. .0 1e10 0.1e-5
+• string literals
+"character between double quotes"
+• integer literals
+-1 0 1 -32768 +32767
+• character literals
+'A' 'b' '\n' '1'
+
+  Comments
+• Provide internal documentation
+• Helps us understand program that we must read--
+including our own
+• Can be used as pseudo code within a program and
+later changed into C++ or left as is to provide
+documentation
+// on one line or
+ /*
+between slash star and star slash
+ */
+
+Declare and Initialize Variables
+• No initial state (values):
+type identifier;
+double aNumber; // garbage value
+type identifier , identifier , … , identifier ;
+int a, b, c; // all have garbage values
+• Supply initial state (values):
+type identifier = initial-state;
+double aNumber = 0.0;
+string name = "Chris Plumber";
+type identifier = identifier ( initial-state );
+string address("1040 E 4th");
+
+Output with cout
+• Programs must communicate with users
+• This can be done with keyboard input statements and
+screen output statements
+• A C++ statement is composed of several components
+properly grouped together to perform some
+operation.
+• The next slide has the first statement used to display
+constants and object state to the screen
+
+The cout statement
+• The general form of a cout statement:
+cout << expression-1 << expression-2 << expression-n ;
+• Example
+cout << "Grade: " << courseGrade << endl;
+What happens with cout?
+• When a cout statement is encountered, the
+expressions are displayed on the screen in a manner
+appropriate to the expression
+• When encountered in a cout statement, endl
+generates a new line on the console
+• To properly use cout and endl your program must
+have this code at the top of the file:
+#include <iostream>
+using namespace std; 
+
+What is the output?
+#include <iostream> // for cout and endl
+using namespace std; // so we don’t need std::
+int main() {
+double aDouble = 1.1;
+string name = "Carpenter";
+ cout << (3 * 2.5) << (2 * 3) << endl;
+ cout << 2 * aDouble;
+cout << name;
+return 0; Output?
+}
+
+Input with cin
+• General forms :
+cin >> object-1 ;
+-orcin >> object-1 >> object-2 >> object-n ;
+• Example: cin >> test1;
+• When a cin statement is encountered
+• the program pauses for user input
+• the characters typed by the user are processed
+• the object's state is changed to the value of the input
+
+  Input is Separated by Whitespace
+blanks, tabs, newlines
+#include <iostream> // for cout, cin, endl
+#include <string> // for class string
+using namespace std; // avoid writing std::
+int main() {
+string name;
+cout << "Enter your name: ";
+ cin >> name;
+ cout << "Hello " << name;
+return 0;
+}
+Dialogue when the user enters Dakota Butler
+Note: WindowMaker is still waiting for a non-existent future cin
+Enter your name: Dakota Butler
+Hello Dakota
+
+Arithmetic Expressions
+• Arithmetic expressions consist of operators
++ - / * %
+and operands like 40 payRate hours
+• Example expression used in an assignment:
+grossPay = payRate * hours;
+• Example expression:
+(40 * payRate) + 1.5 * payRate * (hours - 40)
+• The previous expression has how many
+operators ?___ operands ?___ 
