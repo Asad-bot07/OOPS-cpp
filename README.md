@@ -2,6 +2,8 @@
 
 This repository contains C++ programs demonstrating core Object-Oriented Programming (OOP) concepts. It's useful for students, beginners, or anyone revising OOP in C++.
 
+> ⚠️ **Note:** The theoretical explanations included in this repository have been collected from various internet sources and websites for educational purposes only.
+
 ## 📚 Topics Covered
 - Classes & Objects
 - Constructors & Destructors
