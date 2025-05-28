@@ -1,0 +1,43 @@
+📌 Context in This File:
+This file uses an inline function for demonstration purposes. A detailed explanation of inline functions, including their internals, compiler behavior, pros/cons, and best practices, will be covered in Chapter 3, which will soon be uploaded to the repository.
+/*
+---------------------------------------------------------------
+🟢 Inline Functions in C++
+
+An **inline function** in C++ is a function where the compiler attempts to insert the complete function code directly at the point where the function is called, instead of performing a traditional function call with stack push/pop operations.
+
+✅ **Why use inline functions?**
+- To reduce the overhead of function calls, especially for small, frequently-used functions.
+- Avoids the jump to function code and return process.
+- Improves performance for small code blocks like getters, simple math operations, etc.
+
+🛠️ **Syntax:**
+```cpp
+inline int add(int a, int b) {
+    return a + b;
+}
+
+When the function is called:
+cpp
+Copy
+Edit
+int x = add(5, 3);
+
+The compiler may internally expand it like:
+cpp
+Copy
+Edit
+int x = 5 + 3;
+
+⚠️ Important Notes:
+It is a request, not a command — the compiler may ignore inline if the function is too complex.
+Typically defined in header files.
+Inline functions must be defined before they are used in the code.
+
+🧠 Use Cases:
+Simple logic (e.g., return a > b ? a : b;)
+Mathematical expressions
+Frequently used small utilities
+
+🚫 Avoid for:
+Functions containing loops, recursion, static variables, or large code blocks.
