@@ -14,11 +14,11 @@ This repository contains C++ programs demonstrating core Object-Oriented Program
 - File Handling with Classes
 
 ## 📁 Structure
-/Basics -> Simple class & object programs
-/Inheritance -> Examples of different types of inheritance
-/Polymorphism -> Function overloading, virtual functions
-/FileHandling -> Reading and writing files using classes
-/Projects -> Mini-projects applying OOP concepts
+- 🔹 Chapter 1: Basics (Hello World, Variables, I/O)
+- 🔹 Chapter 2: Control Structures (if-else, loops, switch)
+- 🔹 Chapter 3: Arrays & Functions (recursion, strings)
+- 🔹 Chapter 4: OOP Begins! (Classes & Objects)
+> OOPs concepts will be expanded in the next chapters!
 
 ## ✅ Usage
 1. Clone the repo  
