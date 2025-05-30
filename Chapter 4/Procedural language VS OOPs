@@ -1,0 +1,37 @@
+# 🚀 Procedural Programming vs Object-Oriented Programming (OOP)
+
+| Feature           | Procedural Programming                         | Object-Oriented Programming (OOP)             |
+|-------------------|------------------------------------------------|-----------------------------------------------|
+| **Approach**      | Top-down                                       | Bottom-up                                     |
+| **Focus**         | Functions and procedures                       | Objects and classes                           |
+| **Structure**     | Organized into procedures/functions            | Organized into classes/objects                |
+| **Data Access**   | Global data shared across functions            | Data is encapsulated within objects           |
+| **Modularity**    | Less modular                                   | Highly modular                                |
+| **Reusability**   | Limited code reuse                             | Promotes reuse via inheritance & polymorphism |
+| **Security**      | Less secure (no access control)                | More secure (uses encapsulation)              |
+| **Examples**      | C, Pascal, Fortran                             | C++, Java, Python, C#                         |
+
+---
+
+## 🧠 Summary
+
+- **Procedural Programming** is ideal for smaller, performance-critical tasks.
+- **Object-Oriented Programming** excels in large-scale systems where modularity, security, and maintainability are key.
+
+---
+
+## 📌 Example
+
+### Procedural (C-style)
+```c
+int add(int a, int b) {
+    return a + b;
+}
+
+Object-Oriented (C++-style)
+class Calculator {
+public:
+    int add(int a, int b) {
+        return a + b;
+    }
+};
