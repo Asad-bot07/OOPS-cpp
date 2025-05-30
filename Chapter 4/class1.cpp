@@ -3,7 +3,6 @@
 //2. public(members can be accessible from inside as well as outside the class)
 //3. protected(protected members of a class can be accessed by its own class as well as its child class only)
 //default access specifier--private
-
 #include<iostream>
 #include<string.h>
 using namespace std;
