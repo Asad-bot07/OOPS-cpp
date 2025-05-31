@@ -19,7 +19,7 @@ This repository contains C++ programs demonstrating core Object-Oriented Program
 - 🔹 Chapter 3: Arrays & Functions (recursion, strings)
 - 🔹 Chapter 4: OOP Begins! (Classes & Objects)
 - 🔹 Chapter 5: The four pillars of OOPs 
-> dw seeing the codes in chapter each concept will be discussed in an individual chapter from tommorow!
+> dw seeing the codes in chapter 5 each concept will be discussed in an individual chapter from tommorow!
 
 ## ✅ Usage
 1. Clone the repo  
