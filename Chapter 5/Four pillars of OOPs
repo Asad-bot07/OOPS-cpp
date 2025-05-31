@@ -1,0 +1,73 @@
+Four Pillars of OOP in C++
+
+1. Encapsulation
+Binding data and functions that manipulate the data into a single unit (class).
+Protects data by using access specifiers (private, public, protected).
+Hides internal details from outside interference (data hiding).
+
+Example:
+class Temp {
+    int a;
+    int b;
+public:
+    int solve(int input) {
+        a = input;
+        b = a / 2;
+        return b;
+    }
+};
+
+2. Abstraction
+Showing only essential features and hiding internal implementation.
+Achieved via abstract classes and interfaces (pure virtual functions).
+Simplifies user interaction by hiding complexity.
+
+3. Polymorphism
+Ability of an entity to take multiple forms.
+Types:
+Compile-time: Function overloading, operator overloading
+Run-time: Function overriding using virtual functions
+
+Example of Run-time Polymorphism:
+class Animal {
+public:
+    virtual void makeSound() {
+        std::cout << "Some generic sound\n";
+    }
+};
+class Dog : public Animal {
+public:
+    void makeSound() override {
+        std::cout << "Woof!\n";
+    }
+};
+class Cat : public Animal {
+public:
+    void makeSound() override {
+        std::cout << "Meow!\n";
+    }
+};
+4. Inheritance
+Creating new classes (derived) from existing ones (base).
+Enables code reuse and hierarchical classification.
+
+Types of Inheritance in C++:
+Single Inheritance
+Multiple Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Hybrid Inheritance
+
+Example:
+class Parent {
+public:
+    int x;
+private:
+    int y;
+protected:
+    int z;
+};
+class Child : public Parent {
+    // x is public, y inaccessible, z protected
+};
+Reference: GeeksforGeeks
