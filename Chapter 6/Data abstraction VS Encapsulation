@@ -1,0 +1,23 @@
+🔍 Data Abstraction vs Encapsulation in C++
+
+✅ Data Abstraction:
+
+Hides internal implementation and shows only necessary details.
+Focuses on what an object does.
+Achieved using abstract classes, interfaces, and access specifiers.
+Example: Declaring a method without exposing its logic.
+Helps simplify complexity and improve code readability.
+
+✅ Encapsulation:
+
+Binds data and methods that operate on the data into a single unit (class).
+Focuses on how data is accessed and protected.
+Achieved using access specifiers like private, public, and protected.
+Example: Using private variables and public getter/setter functions.
+Ensures data security and integrit.
+
+📌 Key Difference:
+
+Abstraction hides the implementation.
+Encapsulation hides the data.
+
