@@ -18,8 +18,9 @@ This repository contains C++ programs demonstrating core Object-Oriented Program
 - 🔹 Chapter 2: Control Structures (if-else, loops, switch)
 - 🔹 Chapter 3: Arrays & Functions (recursion, strings)
 - 🔹 Chapter 4: OOP Begins! (Classes & Objects)
-- 🔹 Chapter 5: The four pillars of OOPs 
-> dw seeing the codes in chapter 5 each concept will be discussed in an individual chapter from tommorow!
+- 🔹 Chapter 5: The four pillars of OOPs .
+- 🔹 Chapter 6: Data Abstraction(theory+code).
+> Encapsulation,Polymorphism,Inheritance and more coming soon...
 
 ## ✅ Usage
 1. Clone the repo  
