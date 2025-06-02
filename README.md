@@ -20,7 +20,8 @@ This repository contains C++ programs demonstrating core Object-Oriented Program
 - 🔹 Chapter 4: OOP Begins! (Classes & Objects)
 - 🔹 Chapter 5: The four pillars of OOPs .
 - 🔹 Chapter 6: Data Abstraction(theory+code).
-> Encapsulation,Polymorphism,Inheritance and more coming soon...
+- 🔹 Chapter 7: Encapsulation(theory+code)
+> Polymorphism,Inheritance and more coming soon...
 
 ## ✅ Usage
 1. Clone the repo  
