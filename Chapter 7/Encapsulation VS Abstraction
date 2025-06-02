@@ -1,0 +1,12 @@
+## 🔍 Encapsulation vs Abstraction
+
+| Feature              | Encapsulation                                         | Abstraction                                         |
+|----------------------|------------------------------------------------------|-----------------------------------------------------|
+| **Definition**        | Wrapping data and methods into a single unit         | Hiding internal details and showing only essentials |
+| **Purpose**           | Protect object data and control access               | Simplify complexity and show only relevant details  |
+| **Focus**             | How things are done (implementation protection)      | What should be done (interface design)              |
+| **Access Control**    | Achieved using access modifiers (private, public)    | Achieved using abstract classes and interfaces      |
+| **Data Hiding**       | Yes                                                  | Partially                                           |
+| **Real-World Analogy**| Medicine capsule (hides contents)                   | Car dashboard (hides internal mechanics)            |
+| **Language Features** | Classes, access specifiers                          | Abstract classes, interfaces, virtual functions     |
+| **Main Benefit**      | Increases security and control                      | Improves usability and reduces complexity           |
