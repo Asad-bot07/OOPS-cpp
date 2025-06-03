@@ -21,3 +21,28 @@ The resolving of a function call is done at runtime.
 
 What is a Pure Virtual Function?
 A virtual function is called a pure virtual function if it does not have any implementation and is assigned = 0. A class that contains a pure virtual function is called an abstract class.
+
+Early Binding and Late Binding
+In layman's terms, when a function is called in the code, binding decides which function gets executed based on the context such as the type of object or the function signature. Binding happens at two levels:
+Early Binding: It happens when a function call is resolved during the program's compilation. This makes it faster because everything is decided early
+Late Binding: It happens with virtual functions where the exact function to call is decided at runtime, depending on the actual object type. This is slower because the program has to figure it out while running.
+
+Working of Virtual Functions (concept of VTABLE and VPTR)
+As discussed here, if a class contains a virtual function then the compiler itself does two things.
+If an object of that class is created, then a virtual pointer (VPTR) is inserted as a data member of the class to point to the VTABLE of that class. For each new object created, a new virtual pointer is inserted as a data member of that class.
+Irrespective of whether the object is created or not, the class contains as a member a static array of function pointers called VTABLE. Cells of this table store the address of each virtual function contained in that class.
+
+Rules for Virtual Functions
+The rules for the virtual functions in C++ are as follows:
+
+-Virtual functions cannot be static.
+-A virtual function can be a friend function of another class.
+-Virtual functions should be accessed using a pointer or reference of base class type to achieve runtime polymorphism.
+-The prototype of virtual functions should be the same in the base as well as the derived class.
+-They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived class to override (or re-define the virtual function), in that case, the base class version of the function is used.
+-A class may have a virtual destructor, but it cannot have a virtual constructor.
+
+Limitations of Virtual Functions
+
+-Slower: The function call takes slightly longer due to the virtual mechanism and makes it more difficult for the compiler to optimize because it does not know exactly which function is going to be called at compile time.
+-Difficult to Debug: In a complex system, virtual functions can make it a little more difficult to figure out where a function is being called from.
