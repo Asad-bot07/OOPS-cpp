@@ -1,0 +1,11 @@
+| Feature                     | Compile-time Polymorphism                   | Run-time Polymorphism                     |
+|----------------------------|---------------------------------------------|-------------------------------------------|
+| Also Known As              | Static Polymorphism                         | Dynamic Polymorphism                      |
+| Method Binding             | Early Binding (at compile time)             | Late Binding (at runtime)                 |
+| Implementation Techniques  | Function Overloading, Operator Overloading  | Method Overriding                         |
+| Inheritance Required       | Not necessary                               | Necessary (through base and derived class)|
+| Performance                | Faster (resolved during compilation)        | Slightly slower (resolved during execution)|
+| Flexibility                | Less flexible                               | More flexible                             |
+| Example                    | `int add(int a, int b)` and `float add(float a, float b)` | Overriding `void display()` in a derived class |
+| Language Support           | C++, Java (overloading)                     | C++, Java (via virtual functions/methods) |
+
