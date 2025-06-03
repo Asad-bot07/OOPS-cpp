@@ -1,0 +1,23 @@
+Function Overriding in C++                                                     |
+--------------------------------------------------------------------------------
+What is a function?(recap)
+A function is a block of statements that together performs a specific task by taking some input and producing a particular output. Function overriding in C++ is termed as the redefinition of base class function in its derived class with the same signature i.e. return type and parameters. It can be of both type: Compile Time and Runtime Polymorphism.
+
+What is Function Overriding in C++?
+Function overriding is a type of polymorphism in which we redefine the member function of a class which it inherited from its base class. The function signature remains same but the working of the function is altered to meet the needs of the derived class. So, when we call the function using its name for the parent object, the parent class function is executed. But when we call the function using the child object, the child class version will be executed.
+Real-Life Example of Function Overriding
+The best Real-life example of this concept is the Constitution of India. India took the political code, structure, procedures, powers, and duties of government institutions and set out fundamental rights, directive principles, and the duties of citizens of other countries and implemented them on its own; making it the biggest constitution in the world. 
+Another Development real-life example could be the relationship between RBI(The Reserve Bank of India) and Other state banks like SBI, PNB, ICICI, etc. Where the RBI passes the same regulatory function and others follow it as it is.
+
+Function Overriding using Virtual Function
+Function overriding is performed at the runtime, which means that function call will be binded to its definition during runtime (also known as late binding or dynamic binding). This can be done with the help of virtual functions.
+
+What is a virtual function?
+A virtual function (also known as virtual methods) is a member function that is declared within a base class and is re-defined (overridden) by a derived class. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class's version of the method.
+Virtual functions ensure that the correct function is called for an object, regardless of the type of reference (or pointer) used for the function call.
+They are mainly used to achieve Runtime polymorphism.
+Functions are declared with a virtual keyword in a base class.
+The resolving of a function call is done at runtime.
+
+What is a Pure Virtual Function?
+A virtual function is called a pure virtual function if it does not have any implementation and is assigned = 0. A class that contains a pure virtual function is called an abstract class.
