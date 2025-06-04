@@ -1,0 +1,37 @@
+Inheritance in C++
+
+The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming in C++. In this article, we will learn about inheritance in C++, its modes and types along with the information about how it affects different properties of the class.
+
+Syntax:-
+class DerivedClass : mode_of_inheritance BaseClass {
+    // Body of the Derived Class
+};
+
+| Inheritance Mode        | Description                                                                                                                                     |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Public Inheritance**  | Public members of the base class become **public** in the derived class, and protected members become **protected** in the derived class.       |
+| **Protected Inheritance** | Both public and protected members of the base class become **protected** in the derived class.                                                 |
+| **Private Inheritance** | Both public and protected members of the base class become **private** in the derived class. This is the **default mode** if none is specified. |
+
+
+Access Base Class Members
+Members of the base class can be accessed in the derived class by simply using their name.
+eg:-
+class Base {
+public:
+    int n;
+    void printN() {
+        cout << n << endl;
+    }
+};
+
+// Inheriting Base class publicly
+class Derived : public Base {
+    public:
+    void func () {
+
+        // Accessing Base class members
+        n = 22;
+    }
+};
+The public members of the Base class can be accessed through the objects of the Derived class if the Base class is inherited publicly as in the above example.
