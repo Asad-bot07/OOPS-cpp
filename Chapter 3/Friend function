@@ -1,0 +1,45 @@
+ChatGPT said:
+👥 Friend Function in C++ – Brief Explanation
+A friend function in C++ is a function that is not a member of a class but is given special access to the private and protected members of that class.
+
+🔐 Why Use Friend Function?
+Normally, private and protected members of a class can only be accessed by member functions of the same class.
+But when you need a non-member function (or another class) to access these members, you can declare it as a friend.
+
+✅ Syntax:
+class MyClass {
+    private:
+        int data;
+    public:
+        MyClass() { data = 10; }
+        friend void showData(MyClass obj); // friend function declaration
+};
+
+✅ Example:
+#include <iostream>
+using namespace std;
+class MyClass {
+private:
+    int secret = 42;
+public:
+    friend void reveal(MyClass obj); // Friend function
+};
+void reveal(MyClass obj) {
+    // Can access private members
+    cout << "Secret is: " << obj.secret << endl;
+}
+int main() {
+    MyClass obj;
+    reveal(obj);
+    return 0;
+}
+
+/*
+Output:
+Secret is: 42
+*/
+
+🧠 Key Points:
+Defined outside the class but declared inside with the friend keyword.
+It breaks encapsulation slightly, so use it only when needed.
+Can be a normal function or a member of another class.
