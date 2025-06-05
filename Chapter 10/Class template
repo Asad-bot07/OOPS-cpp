@@ -1,0 +1,71 @@
+Class Templates
+Class templates like function templates, are useful when a class defines something that is independent of the data type. It is useful for classes like LinkedList, BinaryTree, Stack, Queue, Array, etc.
+Example:
+#include <iostream>
+using namespace std;
+
+// Defining class template
+template <typename T> class Geek {
+  public:
+    T x;
+    T y;
+
+    // Constructor
+    Geek(T val1, T val2) : x(val1), y(val2) {}
+
+    // Method to get values
+    void getValues() {
+        cout << x << " " << y;
+    }
+};
+
+int main() {
+
+    // Creating objects of Geek with
+    // different data types
+    Geek<int> intGeek(10, 20);
+    Geek<double> doubleGeek(3.14, 6.28);
+
+    // Access the templates values
+    intGeek.getValues();
+    cout << endl;
+    doubleGeek.getValues();
+
+    return 0;
+}
+Example:
+#include <iostream>
+using namespace std;
+
+// Defining class template with
+// multiple type parameters
+template <typename T1, typename T2, typename T3>
+class Geek {
+  public:
+    T1 x;
+    T2 y;
+    T3 z;
+
+    // Constructor to initialization
+    Geek(T1 val1, T2 val2, T3 val3) :
+        x(val1), y(val2), z(val3) {}
+
+    // Method to get values
+    void getValues() {
+        cout << x << " " << y << " " << z;
+    }
+};
+
+int main() {
+
+    // Creating objects of Geek
+    // with different data types
+    Geek<int, double, string> intDoubleStringGeek(10, 3.14, "Hello");
+    Geek<char, float, bool> charFloatBoolGeek('A', 5.67f, true);
+
+    intDoubleStringGeek.getValues();
+    cout << endl;
+    charFloatBoolGeek.getValues();
+
+    return 0;
+}
