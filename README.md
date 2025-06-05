@@ -23,7 +23,8 @@ This repository contains C++ programs demonstrating core Object-Oriented Program
 - 🔹 Chapter 7: Encapsulation(theory+code).
 - 🔹 Chapter 8: Polymorphism(Theory+code).
 - 🔹 Chapter 9: Inheritance(Theory+code).
-> Templates and more coming soon...
+- 🔹 Chapter 10: Templates
+> Vectors and more coming soon...
 
 ## ✅ Usage
 1. Clone the repo  
