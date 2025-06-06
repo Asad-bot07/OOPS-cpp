@@ -1,0 +1,49 @@
+C++ Vectors
+A vector in C++ is like a resizable array.
+Both vectors and arrays are data structures used to store multiple elements of the same data type.
+The difference between an array and a vector, is that the size of an array cannot be modified (you cannot add or remove elements from an array). A vector however, can grow or shrink in size as needed.
+To use a vector, you have to include the <vector> header file:
+#include <vector>
+
+Create a Vector
+To create a vector, use the vector keyword, and specify the type of values it should store within angle brackets <> and then the name of the vector, like: vector<type> vectorName.
+Example
+// Create a vector called cars that will store strings
+vector<string> cars;
+If you want to add elements at the time of declaration, place them in a comma-separated list, inside curly braces {}, just like with arrays:
+
+Example
+// Create a vector called cars that will store strings
+vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Print vector elements
+for (string car : cars) {
+  cout << car << "\n";
+}
+
+Access a Vector
+You can access a vector element by referring to the index number inside square brackets [].
+
+Vectors, like arrays, are 0-indexed, meaning that [0] is the first element, [1] is the second element, and so on:
+
+Example
+// Create a vector called cars that will store strings
+vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Get the first element
+cout << cars[0];  // Outputs Volvo
+
+// Get the second element
+cout << cars[1];  // Outputs BMW
+
+One advantage of using the vector library, is that it includes many useful functions. For example, you can access the first or the last element of a vector with the .front() and .back() functions:
+
+Example
+// Create a vector called cars that will store strings
+vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Get the first element
+cout << cars.front();
+
+// Get the last element
+cout << cars.back()
