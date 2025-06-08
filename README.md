@@ -26,7 +26,8 @@ This repository contains C++ programs demonstrating core Object-Oriented Program
 - 🔹 Chapter 10: Templates
 - 🔹 Chapter 11: Vectors
 - 🔹 Chapter 12: File handling
-> more coming soon...
+- 🔹 Practice codes(written by me personally)
+> CPP completed
 
 ## ✅ Usage
 1. Clone the repo  
