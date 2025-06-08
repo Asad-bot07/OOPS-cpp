@@ -1,0 +1,6 @@
+to work with vector in c++ using Dev c/c++, follow the steps--
+
+1. open Dev c/c++
+2. Tools menu > compiler options > settings tab > code generation tab 
+3. click on the drop down menu beside "Language standard(-std)" and select the option "ISO c++ 11"
+4. ok
